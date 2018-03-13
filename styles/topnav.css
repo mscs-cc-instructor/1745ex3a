@@ -11,7 +11,7 @@
     width: 15em;
     height: 3em;
     float: left;
-    background: #006060;
+    background-color: rgb(27,66,146);
 }
 #menu1:hover {
     height: 21em;
@@ -28,7 +28,7 @@
     width: 15em;
     height: 3em;
     float: left;
-    background: #006060;
+    background-color: rgb(27,66,146);
 }
 #menu2:hover {
     height: 21em;
@@ -45,7 +45,7 @@
     width: 15em;
     height: 3em;
     float: left;
-    background: #006060;
+    background-color: rgb(27,66,146);
 }
 
 #menu3:hover {
@@ -64,7 +64,7 @@ ul.topnav {
 	padding: 0 0.25em;	
 	margin: 0;
 	float: left;
-	background: #006060;
+	background-color: rgb(27,66,146);
 	font-size: 1.2em;
 }
 ul.topnav li {
@@ -82,15 +82,15 @@ ul.topnav li span {
 }
 ul.topnav li a {
     padding: .5em 1.5em .5em 1.5em;
-    color: #DDEEEE;
+    color: #dfe1e5;
     display: block;
     text-decoration: none;
     float: left;
     list-style: none;
 }
 ul.topnav li a:hover{
-    background: #DDEEEE;
-    color: #006060;
+    background-color: #dfe1e5;
+    color: rgb(27,66,146);
 }
 ul.topnav li a {
     -webkit-transition: 200ms linear;
