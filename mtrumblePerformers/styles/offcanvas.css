@@ -65,10 +65,15 @@
         transition: none 0s ease-out;
         -webkit-transform: translate(0,0);
         transform: translate(0,0);
+        width: 400px;
     }
 
     .c2 {
         position: static;
+    }
+
+    .c3 {
+        width: 400px;
     }
 }
 
