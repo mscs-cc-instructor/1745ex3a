@@ -1,0 +1,54 @@
+﻿body {
+    margin: 0;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container div {
+    box-sizing: border-box;
+    min-height: 150px;
+    min-width: 150px;
+}
+
+
+.c3 {
+    color: #333;
+    background-color: #b4d2f7;
+}
+
+.c4 {
+    color: #333;
+    background-color: #d5dfef;
+}
+
+.c5 {
+    color: #333;
+    background-color: #dfe1e5;
+}
+.t1 {
+    color: rgb(0,0,255);
+    color: #333;
+    background-color: rgb(240,100,0);
+    background-color: #dfe1e5
+}
+
+div table td {
+    color: rgb(107,128,255);
+    color: blue;
+    color: #333;
+    background-color: rgb(255,190,109)
+}
+
+header {
+    color: #ddd;
+    background-color: #404040;
+}
+
+footer {
+    color: #ddd;
+    background-color: #404040;
+}
