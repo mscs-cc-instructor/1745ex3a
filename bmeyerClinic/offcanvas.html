@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles/layouts-common.css" rel="stylesheet" />
+        <link href="styles/offcanvas.css" rel="stylesheet" />
+        <link href="styles/nav.css" rel="stylesheet" />
+        <title>PITNCAM: Our Services</title>
+    </head>
+  <body>    
+    <header>
+		<p style=""text-align: center;">
+				<img title="" style=""width: 86px; height: 68px;" alt=""
+					src="styles/Logosmall.JPG" />
+			</p>
+    </header>
+    <nav>   
+        <ul>
+             <li><a href="mostlyfluid.html" style="font-family: 'Times New Roman', Times, serif; font-size: x-large">Home</a></li>
+				<li><a href="columndrop.html" style="font-family: 'Times New Roman', Times, serif; font-size: x-large">Our Staff</a></li>
+				<li><a href="layoutshifter.html" style="font-family: 'Times New Roman', Times, serif; font-size: x-large">Our Services</a></li>
+				<li><a href="tinytweaks.html" style="font-family: 'Times New Roman', Times, serif; font-size: x-large">FAQ</a></li>
+				<li><a href="offcanvas.html" style="font-family: 'Times New Roman', Times, serif; font-size: x-large">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container" role="main">
+        <div id="leftDrawer" class="c1">
+			<img src="styles/injury.JPG" />
+        </div>
+        <div id="mainPanel" class="c2">
+            <p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: large; text-align: center">
+				Pain in the Neck Chiropractic & Massage
+			</p>
+			<p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: large; text-align: center">
+				Phone: (608)-867-5309
+			</p>
+			<p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: large; text-align: center">
+				Email: PITN@chiromail.com
+			</p>
+			<p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: large; text-align: center">
+				<a href="http://localhost:32603/default.html" style="font-family: 'Times New Roman', Times, serif; font-size: x-large">Back to Default</a>
+			</p>
+        </div>
+        <div id="rightDrawer" class="c3">
+			<img src="styles/support.JPG" />
+        </div>
+    </div>
+
+    <footer>
+			<div class="col-md-12">
+				<div class="copyright">
+					<span class="SkinObject" id="dnn_dnnCopyright_lblCopyright">Copyright 2018 by PITNCAM
+					</span>
+				</div>
+			</div>        
+    </footer>
+
+    <script type="text/javascript">
+        var position = 0;
+        var mainPanel = document.getElementById("mainPanel");
+        var leftDrawer = document.getElementById("leftDrawer");
+        var rightDrawer = document.getElementById("rightDrawer");
+        function toggle(evt) {
+            position++;
+            if (position % 3 == 0) {
+                leftDrawer.classList.remove("open");
+                rightDrawer.classList.remove("open");
+            } else if (position % 3 == 1) {
+                leftDrawer.classList.add("open");
+                rightDrawer.classList.remove("open");
+            } else {
+                leftDrawer.classList.remove("open");
+                rightDrawer.classList.add("open");
+            }
+        }
+        mainPanel.addEventListener("click", toggle);
+        leftDrawer.addEventListener("click", toggle);
+        rightDrawer.addEventListener("click", toggle);
+    </script>
+
+    <script type="text/javascript">
+        function init() {
+            window.matchMedia("(min-width: 800px)").addListener(hitMQ);
+            window.matchMedia("(min-width: 600px)").addListener(hitMQ);
+        }
+        function hitMQ(evt) {
+            sampleCompleted("RWDPatterns-MostlyFluid");
+        }
+        init();
+    </script>
+  </body>
+</html>
