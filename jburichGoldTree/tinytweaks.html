@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles/layouts-common.css" rel="stylesheet" />
+        <link href="styles/tinytweaks.css" rel="stylesheet" />
+        <link href="styles/nav.css" rel="stylesheet" />
+        <link href="styles/goldtree.css" rel="stylesheet" />
+
+        <title>Responsive Web Design Pattern: Tiny Tweaks</title>
+    </head>
+  <body>
+    <header>
+        <h1>Tiny Tweaks</h1>
+        <section class="photoright"><a href="../default.html"><img src="img/logo.png"/></a></section>
+        
+    </header>
+    <nav>   
+        <ul>
+            <li><a href="mostlyfluid.html">Home</a></li>
+            <li><a href="columndrop.html">Order</a></li>
+            <li><a href="layoutshifter.html">Process</a></li>
+            <li><a href="tinytweaks.html">About Us</a></li>
+            <li><a href="offcanvas.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container" role="main">
+        <div class="c1" style="clear: both">
+            <aside>
+                <img src="img/colorshirts.jpg" height"100%" width="100%"  />
+            </aside>
+            <h3>About Us:</h3>
+            <p>Like all good businesses, Gold Tree Apparel started as a dream in a basement. With a lot of hard work, determination, and a lot of passion, 
+                Gold Tree became what you know, and love, today. 
+            </p>
+            <h3>What we offer:</h3>
+            <p>We can do both screen printing and embroidery on a lot of different garments. We can even embroider towels and screenprint on totebags!
+                 Just contact us to see what we can put together for you.
+            </p>
+
+        </div>
+
+        <footer>
+            Disclaimers: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        function init() {
+            window.matchMedia("(min-width: 800px)").addListener(hitMQ);
+            window.matchMedia("(min-width: 600px)").addListener(hitMQ);
+        }
+
+        function hitMQ(evt) {
+            sampleCompleted("RWDPatterns-MostlyFluid");
+        }
+
+        init();
+
+    </script>
+  </body>
+</html>

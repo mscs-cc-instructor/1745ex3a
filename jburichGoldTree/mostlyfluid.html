@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles/layouts-common.css" rel="stylesheet" />
+        <link href="styles/mostlyfluid.css" rel="stylesheet" />
+        <link href="styles/nav.css" rel="stylesheet" />
+        <link href="styles/goldtree.css" rel="stylesheet" />
+        <title>Responsive Web Design Pattern: Mostly Fluid</title>
+    </head>
+  <body>
+    <div class="container" role="main">
+        <header dir="ltr">
+            <h1>Mostly Fluid</h1>
+        <section class="photoright"><a href="../default.html"><img src="img/logo.png"/></a></section>
+        </header>
+        <nav>   
+            <ul>
+                <li><a href="mostlyfluid.html">Home</a></li>
+                <li><a href="columndrop.html">Order</a></li>
+                <li><a href="layoutshifter.html">Process</a></li>
+                <li><a href="tinytweaks.html">About Us</a></li>
+                <li><a href="offcanvas.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="c1">
+            <section class="basicphoto">
+                <img src="img/ss_IMG_6521.jpg" height"200%" width="200%" />
+            </section>
+        </div>
+        <div class="c2">
+            <section class="basictext">
+                <p><b>Welcome to Gold Tree Apparel</b>
+                    <br />
+                    <br />
+                    We aim to bring you the best screenprinted and embroidered shirts at the best price around!  
+                </p>
+            </section>
+        </div>
+        <div class="c3">
+            <section class="basicphoto">
+                <img src="img/ss_IMG_6642.jpg" height"200%" width="200%" />
+            </section>        </div>
+        <div class="c4">
+            <section class="basictext">
+                <p><b>Latest Review:</b></p>
+                <p>
+                    <b>Nate Hessburg :</b>
+                   <i> This company is so great to work with! They are so professional, giving opinions 
+                    and working along with you to get you exactly what you want. They are considerate, 
+                    timely, and know what they are doing. The results of the sweatshirt I ordered 
+                    was amazing. Highly recommend. </i>
+                </p>
+            </section>
+        </div>
+        <div class="c5">
+             <section class="basicphoto">
+                <img src="img/ss_IMG_6675.jpg" height"200%" width="200%" />
+            </section>
+        </div>
+
+        <footer>
+            Disclaimers: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        function init() {
+            window.matchMedia("(min-width: 800px)").addListener(hitMQ);
+            window.matchMedia("(min-width: 600px)").addListener(hitMQ);
+        }
+
+        function hitMQ(evt) {
+            sampleCompleted("RWDPatterns-MostlyFluid");
+        }
+
+        init();
+
+    </script>
+  </body>
+</html>

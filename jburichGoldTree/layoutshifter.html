@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles/layouts-common.css" rel="stylesheet" />
+        <link href="styles/layoutshifter.css" rel="stylesheet" />
+        <link href="styles/nav.css" rel="stylesheet" />
+        <link href="styles/goldtree.css" rel="stylesheet" />
+
+        <title>Responsive Web Design Pattern: Layout Shifter</title>
+    </head>
+  <body>
+    <div class="container" role="main">
+        <header>
+            <h1>Layout Shifter</h1>
+        <section class="photoright"><a href="../default.html"><img src="img/logo.png"/></a></section>
+
+        </header>
+        <nav>   
+            <ul>
+                <li><a href="mostlyfluid.html">Home</a></li>
+                <li><a href="columndrop.html">Order</a></li>
+                <li><a href="layoutshifter.html">Process</a></li>
+                <li><a href="tinytweaks.html">About Us</a></li>
+                <li><a href="offcanvas.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="c1">
+            <section class="basictext">
+                <p>Screen printing is defined as "to force ink or metal onto (a surface) through a prepared screen of fine material so as to create a picture or pattern."
+                </p>
+<!--                <img src="img/ss_IMG_6675.jpg" width="100%" height="100%"/>-->
+            </section>
+        </div>
+        <div class="c4">
+            <div class="c2">
+                <section class="basictext">
+                    <p>Screenprinting seems like an easy process. Make the stencil, slap some ink on it, and poof! There it is. However, a lot more
+                        goes into printing that it seems. From making the screens, to knowing your inks, to knowing how materials react with inks and heat. 
+                    </p>
+                </section>
+            </div>
+            <div class="c3">
+                <section class="basictext">
+                    <p>Each color in your design must be put on a different screen, because the seperation is different for each one. They must then be carefully
+                        aligned so they come out straight, and there are no unintentional gaps between colors. The more screens, the more difficult the process becomes. 
+                    </p>
+                    <img src="img/workspace.jpg" width="100%" height="100%"/>
+                </section>
+            </div>
+        </div>
+
+        <footer>
+            Disclaimers: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        function init() {
+            window.matchMedia("(min-width: 800px)").addListener(hitMQ);
+            window.matchMedia("(min-width: 600px)").addListener(hitMQ);
+        }
+
+        function hitMQ(evt) {
+            sampleCompleted("RWDPatterns-MostlyFluid");
+        }
+
+        init();
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body {
+    background-color: rgba(95,95,95,1.00);
+    /*background-image: url() margin: auto;*/
+    background-image: url('../img/bkg_lg.jpg');
+    font-family: "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    /*padding: auto;*/
+    /*min-width: 1000px;*/
+}
+
+/*nav.topnav {
+    z-index: 999;
+    display: inline;
+    height: 135px;
+    width: 100%;
+    min-width: 1000px;
+    position: fixed;
+    top: 0;
+    padding-top: 23px;
+    background-color: rgba(161,161,161,1.00);
+    background-image: url('../img/topnav_dkgray135px.jpg');
+    float: left;
+    text-align: center;
+}*/
+
+/* TEXT */
+.featured h1 {
+	color: #FFF;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+/* LINKS */
+
+/*.topnav a {
+	color: #FFF;
+	text-decoration: none;
+	display: inline;
+	text-align: center;
+	font-family: "Myriad Pro", Helvetica, Arial, "sans-serif";
+	font-size: 20px;
+	margin: 15px; 
+	padding: 10px;
+}
+
+.topnav a:visited {
+	color: #FFF;
+}
+
+.topnav a:hover {
+	color: rgba(225,221,21,1.00);
+	text-decoration: none;
+}*/
+
+/* ERROR PAGE */
+.error {
+	float: left;
+	width: 100%;
+	text-align: center;
+	font-family: "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	margin-top: 175px;
+}
+
+/* SECTIONS */
+section.topSection {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-family: "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    margin-top: 175px;
+    padding-bottom: 20px;
+    background-color: rgba(95,95,95,1.00);
+    color: #fff;
+}
+
+section.topSection-dk {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-family: "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    margin-top: 175px;
+    padding-bottom: 20px;
+}
+
+section.basictext {
+    float: left;
+    padding: 25px;
+}
+
+section.basictextwhite {
+    float: left;
+    padding: 25px;
+    color: #fff;
+}
+
+section.basicphoto {
+    float: left;
+    height: 50%;
+    width: 50%;
+}
+
+section.featured {
+    float: left;
+    height: 600px;
+    width: 100%;
+    background-color: rgba(33,33,33,1.00);
+    text-align: center;
+}
+
+.featuredphotos img {
+    margin: 5px;
+}
+section.orderpic {
+    float: left;
+    padding: 15px;
+    text-align: center;
+}
+
+section.photoright {
+    text-align: right;
+    padding: 15px;
+}
