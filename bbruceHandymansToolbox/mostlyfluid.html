@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/common_mostlyfluid.css" rel="stylesheet" />
+    <link href="styles/nav.css" rel="stylesheet" />
+    <title>Responsive Web Design Pattern: Mostly Fluid</title>
+</head>
+<body>
+    <div class="container" role="main">
+        <nav>
+            <a href="mostlyfluid.html">Home</a>
+            <a href="columndrop.html">Electrical</a>
+            <a href="layoutshifter.html">Carpentry</a>
+            <a href="offcanvas.html">Drywall</a>
+            <a href="tinytweaks.html">Plumbing</a>
+        </nav>
+        <header>
+            <img id="headerImage" src="images/HeaderPhoto.jpg" alt="HeaderPhoto" />
+        </header>
+        <div class="c1">
+            <h3>Bio and Welcome</h3>
+            <p>Hi everyone. My name is Brian and I'm glad to meet you.</p>
+            <figure>
+                <img id="bioPhoto" src="images/BioPhoto.jpg" alt="HeaderPhoto" />
+                <figcaption>Your's truly</figcaption>
+            </figure>
+            <p>
+                Ever since I was little I have always enjoyed taking things apart to figure how they work.
+                    Sometimes, this led to some level of exasperation from my father when what I took apart didn't work when I put it back together. I'm happy to say that things have changed for the better in
+                    that regard. Now my father calls me whenever he needs something fixed.
+            </p>
+            <p>
+                I have developed quite a few skills over the years and honed them since buying my first home in 2010. I know how frustrating it can be to have the desire but not the knowledge or skills to
+                    accomplish sometimes even the smallest DIY projects and have met many people looking to learn more. The purpose of the Handyman's Toolbox is to pass on some knowledge to those who have a desire to learn, and to offer up my services for those that would rather hire out.
+            </p>
+        </div>
+        <div class="c2">
+            <h2>Welcome to The Handyman's Toolbox!</h2>
+            <img id="c1Image" src="images/toolbox.jpg" alt="Toolbox Photo" />
+
+        </div>
+        <div class="c3">
+            <h3>Services I offer</h3>
+            <ul>
+                <li>Framing and carpentry</li>
+                <li>Basic plumbing</li>
+                <li>Drywalling, mudding & taping</li>
+                <li>Interior and Exterior painting</li>
+                <li>Gutter cleanout</li>
+                <li>Patio and concrete installation</li>
+                <li>Stone and tile installation</li>
+                <li>And much more</li>
+            </ul>
+        </div>
+        <div class="c4">
+            <h3>Tip of the day</h3>
+            <p>Always remember...righty tighty, lefty loosey!</p>
+        </div>
+        <div class="c5">
+            <h3>Need help? Please fill out the form below!</h3>
+            <form>
+                <fieldset>
+                    <legend>Contact Info</legend>
+                    <label>Name:</label>
+                    <input type="text" /><br />
+                    <label>Email:</label>
+                    <input type="email" /><br />
+                    <input type="submit" value="Submit Contact Info" />
+                </fieldset>
+            </form>
+        </div>
+
+        <footer>
+            <p>&copy;The Handyman's Toolbox &nbsp; &#9900; &nbsp; 2019</p>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript">
+        function init() {
+            window.matchMedia("(min-width: 800px)").addListener(hitMQ);
+            window.matchMedia("(min-width: 600px)").addListener(hitMQ);
+        }
+
+        function hitMQ(evt) {
+            sampleCompleted("RWDPatterns-MostlyFluid");
+        }
+
+        init();
+
+    </script>
+</body>
+</html>
