@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/common_tinytweaks.css" rel="stylesheet" />
+    <link href="styles/nav.css" rel="stylesheet" />
+    <title>Responsive Web Design Pattern: Tiny Tweaks</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="mostlyfluid.html">Home</a>
+            <a href="columndrop.html">Carpentry</a>
+            <a href="layoutshifter.html">Electrical</a>
+            <a href="offcanvas.html">Drywall</a>
+            <a href="tinytweaks.html">Plumbing</a>
+            <a href="../default.html">../default.html</a>
+        </nav>
+        <img id="headerImage" src="images/plumbingHeader.PNG" />
+    </header>
+    <div class="container" role="main">
+        <div class="c1" style="clear: both">
+            <h3>How to unclog a toilet without a plunger</h3>
+            <div class="images" style="clear: both">
+                <img src="images/5-diy-methods-for-unclogging-clogged-toilet-without-plunger.w1456.jpg" alt="Unclog Image" width="400"/>
+            </div>
+            <h3>How to sweat copper</h3>
+            <img src="images/sweatingCopper.PNG" width="400"/>
+            <p>Step 1: Assemble your tools and materials. For this job you're going to need a few things.</p>
+            <ul>
+                <li>Tube cutter</li>
+                <li>Propane torch</li>
+                <li>Emery cloth, 120 grit</li>
+                <li>Flame protector cloth</li>
+                <li>Fire extinguisher</li>
+                <li>Fitting brush</li>
+                <li>Striker (if your torch doesn't have one built in)</li>
+                <li>Gloves</li>
+                <li>Lead-free solder</li>
+                <li>Paste flux</li>
+            </ul>
+            <p>Step 2: Cut your copper to length using the tube cutter. Go slow and avoid applying to much pressure as this can cause the pipe to dent.</p>
+            <p>Step 3: Remove burrs inside the copper using the reaming attachment on your tube cutter.</p>
+            <p>Step 4: Using the emery cloth, clean the outside of the pipe end until it shines.</p>
+            <p>Step 5: Using the fitting brush, clean the inside of the pipe fitting.</p>
+            <p>Step 6: Brush the outside of your tubing and the inside of the fitting with an even layer of flux. Then seat the tube into the fitting to full depth. Then wipe off any excess flux.</p>
+            <p>Step 7: Apply heat. Heat the joint evenly holding the solder against the seam of the joint on the opposite side of the torch. The solder will melt and appear to suck into the joint. Make sure that that the joint appears full on all sides.</p>
+            <p>Step 8: Allow the joint to cool and then test for leaks. Slowly turn the water on and watch for pinhole jets of water.</p>
+            <p>Step 9: Put your tools and materials away! You'll thank yourself later!</p>
+        </div>
+
+        <footer>
+            <p>&copy;The Handyman's Toolbox &nbsp; &#9900; &nbsp; 2019</p>
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        function init() {
+            window.matchMedia("(min-width: 800px)").addListener(hitMQ);
+            window.matchMedia("(min-width: 600px)").addListener(hitMQ);
+        }
+
+        function hitMQ(evt) {
+            sampleCompleted("RWDPatterns-MostlyFluid");
+        }
+
+        init();
+
+    </script>
+</body>
+</html>
