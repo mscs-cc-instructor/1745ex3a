@@ -1,0 +1,47 @@
+.c1 {
+    padding: 10px;
+    width: 100%;
+}
+
+header {
+    background-image: url('../images/header1.jpg');
+}
+
+.navli li {
+    width: 18.945%;
+}
+
+@media (min-width: 500px) {
+    .c1 {
+        padding: 20px;
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 800px) {
+    .c1 {
+        padding: 40px;
+        font-size: 2em;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* COMC1745 Exercise 3A styles */
+header {
+    width: 100%;
+    min-height: 40px;
+}
+
+footer {
+    width: 100%;
+    min-height: 40px;
+    text-align: center;
+}
