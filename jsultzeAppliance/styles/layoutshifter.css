@@ -27,13 +27,21 @@
     }
 }
 
+body {
+    background-color: bisque;
+}
+
 header {
+    width: 100%;
+    min-height: 40px;
     color: black;
     text-align: center;
     background-color: lightcoral;
 }
 
 footer {
+    width: 100%;
+    min-height: 40px;
     color: black;
     background-color: lightcoral;
 }
@@ -46,7 +54,7 @@ img {
 }
 
 .c1{
-    background-color:bisque;
+    background-color:navajowhite;
 }
 
 .c2, .c3, .c4{
