@@ -45,6 +45,10 @@
 
 /* COMC1745 Exercise 3A styles */
 
+body {
+    background-color: bisque;
+}
+
 header {
     color: black;
     text-align: center;
