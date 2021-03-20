@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles/mostlyfluid.css" rel="stylesheet" />
+        <link href="styles/layouts-common.css" rel="stylesheet" />
+        <link href="styles/nav.css" rel="stylesheet" />
+
+        <title>HobbySpot Home</title>
+    </head>
+  <body>
+    <div class="container" role="main">
+        <header>
+            <h1>Welcome to HobbySpot!</h1>
+        </header>
+        <nav>   
+            <ul>
+                <li><a href="mostlyfluid.html">Home</a></li>
+                <li><a href="columndrop.html">Disc Golf</a></li>
+                <li><a href="layoutshifter.html">Rock Climbing</a></li>
+                <li><a href="tinytweaks.html">Videogames</a></li>
+                <li><a href="offcanvas.html">Friends</a></li>
+            </ul>
+        </nav>
+        <div class="c1">
+            <p>
+                Welcome to HobbySpot!
+            </p>
+            <p>
+                Where we cater to what your hobbies are!
+            </p>
+            <p>
+                We will add/remove pages based on your specific interests.
+            </p>
+            <p>
+                Let us know what you want to see added/removed from your pages.
+            </p>
+            <p>
+                Use the navigation bar located at the top of the page to go between your pages.
+            </p>
+        </div>
+        <div class="c2">
+            <p>
+                <img id="headerImage" src="images/hobbies.png" alt="Hobbies Image"/>
+            </p>
+        </div>
+
+        <footer>
+            &copy; 2019 HobbySpot
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        function init() {
+            window.matchMedia("(min-width: 800px)").addListener(hitMQ);
+            window.matchMedia("(min-width: 600px)").addListener(hitMQ);
+        }
+
+        function hitMQ(evt) {
+            sampleCompleted("RWDPatterns-MostlyFluid");
+        }
+
+        init();
+
+    </script>
+  </body>
+</html>

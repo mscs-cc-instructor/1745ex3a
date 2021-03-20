@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles/layouts-common.css" rel="stylesheet" />
+        <link href="styles/layoutshifter.css" rel="stylesheet" />
+        <link href="styles/nav.css" rel="stylesheet" />
+        <title>Rock Climbing</title>
+    </head>
+  <body>
+    <div class="container" role="main">
+        <header>
+            <h1>Rock Climbing</h1>
+        </header>
+        <nav>   
+            <ul>
+                <li><a href="mostlyfluid.html">Home</a></li>
+                <li><a href="columndrop.html">Disc Golf</a></li>
+                <li><a href="layoutshifter.html">Rock Climbing</a></li>
+                <li><a href="tinytweaks.html">Videogames</a></li>
+                <li><a href="offcanvas.html">Friends</a></li>
+            </ul>
+        </nav>
+        <div class="c1">
+            <p>
+                Rock climbing is the sport of climbing rock faces. (pretty self-explanatory). There are two areas of rock climbing: bouldering and walls.
+                <img id="rockclimbing" src="images/rockclimbing.jpg" alt="Rock Climbing" />
+            </p>
+        </div>
+        <div class="c4">
+            <div class="c2">
+                <p>
+                    <u>Bouldering</u> is climbing on short and technical 'boulders'. These are usually only 15-20ft tall and don't require any equipment other than shoes.
+                </p>
+            </div>
+            <div class="c3">
+                <p>
+                    <u>Wall climbing</u> is climbing whole faces of rock. These can be anywhere from 30ft tall to 1000's of feet in the air.
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2019 HobbySpot
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        function init() {
+            window.matchMedia("(min-width: 800px)").addListener(hitMQ);
+            window.matchMedia("(min-width: 600px)").addListener(hitMQ);
+        }
+
+        function hitMQ(evt) {
+            sampleCompleted("RWDPatterns-MostlyFluid");
+        }
+
+        init();
+
+    </script>
+  </body>
+</html>
