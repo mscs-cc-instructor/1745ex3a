@@ -1,0 +1,27 @@
+﻿nav {
+    display: block;
+    overflow: hidden;
+    background-color: darkslategray;
+    position: inherit;
+    top: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    border: black thin solid;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+        background: #ddd;
+        color: black;
+}

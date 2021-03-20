@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles/layouts-common.css" rel="stylesheet" />
+        <link href="styles/columndrop.css" rel="stylesheet" />
+        <link href="styles/nav.css" rel="stylesheet" />
+        <title>Responsive Web Design Pattern: Column Drop</title>
+    </head>
+  <body>
+    <div class="container" role="main">
+        <header>
+            <h1>Contractor Quest</h1>
+        </header>
+        <nav>   
+            <ul class="navli">
+                <li><a href="mostlyfluid.html">Mostly Fluid</a></li>
+                <li><a href="columndrop.html">Column Drop</a></li>
+                <li><a href="layoutshifter.html">Layout Shifter</a></li>
+                <li><a href="tinytweaks.html">Tiny Tweaks</a></li>
+                <li><a href="offcanvas.html">Off Canvas</a></li>
+            </ul>
+        </nav>
+        <div class="c1">
+            <h2>Accepted Contracts</h2>
+            <p>Kermit the frog wants Jiminy Crickets installed in his yard. Payment: $15.00 </p>
+            <p>Etc suscipere assentiri scriptura evidentem vis videretur potuerunt vel. $10.00 </p>
+            <img src="images/calender.png" style="width:100%;height:50%;"/>
+            <h2>Completed Contracts</h2>
+            <p>At enatare effectu docetur invenero earumque . Payment: $40.00 Date Completed: 01/01/0000 </p>
+            <p>Concilium sufficere etc evidentes eversioni uno. Payment: $50.00 Date Completed: 01/01/0000 </p>
+            <p>Inge voce volo eas quae regi vel suas rom. Payment: $250.00 Date Completed: 01/01/0000  </p>
+            <p>Praesertim praecipuum cui religionis inchoandum. Payment: $30.00 Date Completed: 01/01/0000 </p>
+            <p>Fallar cur volunt ita vixque. Payment: $10.00 Date Completed: 01/01/0000 </p>
+        </div>
+        <div class="c2">
+            <h2>Your Listed Contracts</h2>
+            <p>User has not listed contracts.</p>
+            <img src="images/sadface.png" />
+            <h2>Listing History</h2>
+            <p>No listings on record.</p>
+        </div>
+        <div class="c3">
+            <h2>Cancel A Contract</h2>
+            <img src="images/cancelcontract.jpg" style="width:100%;height:30%;"/>
+            <h3>Terms of Service</h3>
+            <p>Aetheris vis est mentibus noluisse cau qua. De ipsas sensu abuti im causa. Imaginem non tum cognitum addantur. Dei sequuturum nec sui cum diversorum progressus. Ineptum cui invicem quamvis chartam est. Ritas illae valde modos duo demus ero hic. Illas hac mecum est nullo jam volui. Sim rerum omnis prava mea cui. 
+
+Profundum credendum summopere sap lus inspiciam confirmet. An imbecillia labefactat co incidissem im. Exhibetur inscitiae concilium ii at mo. Cupientem praeditis ii quocunque archimede procedere at ac. Mem firmae exigui nondum rea contra tam hoc nomine. Ii ut vultum ausint vereor ac. Ulla male suam sine ante uti meam nec sum. Foco ab ob im sane fore de nova tale. 
+
+Innumeras de probentur si suspicari ii. Meae modi more ista sint iii jam quin. Ab inusitatis conflantur eo consumerem co confirmari mo. Summe ipsis agi eidem totum essem oriri sui. Describere ex varietates aliquoties ac aliquamdiu industriam de. Intelligo id ex tangantur ingressus ac co examinavi distincta conjectus. Levitatem cum probentur theologos assignare tam manifesta calescere nec eam. Quapropter in satyriscos ea ex pervenisse. Nunc eo esse ut quod ipsi unde. Co exhibetur condemnat evidentes tollentur is. 
+
+Virtutibus occurreret ab perfectius ob majestatis ex ei. Sex ego uno locum lor clara istas. Haustam organis veritas pro sed. Extensarum imperfecta vox per propugnent cap utilitatis ero. Tot callidus venturum pictores subducam appareat hae ubi. Cunctaque admonitus tentassem to ii soliditas ha consistat concludam ad. Est ritas sae aut istam paulo reges terea serie fas. 
+
+Existentia quascunque ne collabitur an is ii. Vidi loco quam fal etc qua. Memoria usitata sit usitate incumbo uno his conabor liberet. Dubitem dei defixus ibi junctae est est homines respexi alterum. Ex at debent tritam essent vestra. Effectibus imaginaria continetur agi jam verumtamen agnoscerem. Volens postea dicunt sap hac nomine. Hinc et quem fore ab post scio ne fuse im. Eo mo ut meditabor occasione societati gi. An persuadet videlicet ii ingeniosi. 
+
+Jam hae motarum mem luminis utilius sum. Superare tractare re ad videntur ha is machinae cogitans partibus. Quisquis revocari eo quidquam ut patiatur imaginor. Vi immortalem de si cucurbitas perfectior desiderant. Et at concedam delapsus mutuatis importat rogassem ad. Sap obversari mei conjectus contineri pro distingui vix excludere. Sensibus quanquam et ac imagines infinite statuere judicium. Vetus versa ita negat mea nudam qua hoc foret illae. 
+
+ <h3>"Users" Accepted Contracts</h3>
+            <ul>
+                <li>Yogi Bear Indem seiet keins drauf auf flick als. Sa mehrere gelegen wu trocken dritten gewohnt.</li>
+                <li>Dame kinn so es tust. Eigentlich an zu hufschmied verdrossen.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+         Disclaimer: You may be wondering where the other foot is.
+    </footer>
+
+    <script type="text/javascript">
+        function init() {
+            window.matchMedia("(min-width: 800px)").addListener(hitMQ);
+            window.matchMedia("(min-width: 600px)").addListener(hitMQ);
+        }
+
+        function hitMQ(evt) {
+            sampleCompleted("RWDPatterns-MostlyFluid");
+        }
+
+        init();
+
+    </script>
+  </body>
+</html>
