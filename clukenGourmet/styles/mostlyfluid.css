@@ -28,7 +28,7 @@
         width: 15%;
     }
     .c4 {
-        width: 60%;
+        width:60%;
     }
     .c5 {
         width: 21%;
@@ -44,12 +44,9 @@
 }
 
 /* COMC1745 Exercise 3A styles */
-header {
-    border-color: #00FF00;
-    border-style: solid;
+header { 
     width: 100%;
     min-height: 40px;
-    border-left-width: medium;
 }
 
 footer {

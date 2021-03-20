@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/layouts-common.css" rel="stylesheet" />
+    <link href="styles/mostlyfluid.css" rel="stylesheet" />
+    <link href="styles/nav.css" rel="stylesheet" />
+    <title>Responsive Web Design Pattern: Quick Picks</title>
+</head>
+<body>
+    <div class="container" role="main">
+        <header>
+            <h1>Quick Picks</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="quickpicks.html">Quick Picks</a></li>
+                <li><a href="charcuterie.html">Charcuterie</a></li>
+                <li><a href="specialtycheese.html">Specialty Cheese</a></li>
+                <li><a href="howtopair.html">How to Pair</a></li>
+                <li><a href="craftbeer.html">Craft Beer</a></li>
+            </ul>
+        </nav>
+        <div class="c1">
+            <p>
+                <img src="wsQuickPicksPage1.png" />
+            </p>
+            <h2>Party Night!</h2>
+
+            <h3>Pick 3-4 Cheeses:</h3>
+            <ol>
+                <li>Soft, spreadable cheese</li>
+                <li>Hard Cheese</li>
+                <li>Semi Soft</li>
+                <li>Soft Ripened</li>
+            </ol>
+        </div>
+        <div class="c2">
+            <img src="wsQuickPicksPage2.png" />
+        </div>
+        <div class="c2">
+            <h3>Pick 3-4 Meats:</h3>
+            <ol>
+                <li>Prosciutto</li>
+                <li>Finocchiona</li>
+                <li>Capicolla</li>
+                <li>Mortadella</li>
+                <li>Speck</li>
+                <li>Italian Dry Salami</li>
+                <li>Genoa Salami</li>
+            </ol>
+        </div>
+        <div class="c4">
+            <h2>Date Night for Two</h2>
+
+            <h3>We recommend two cheeses, two meats, and some fruit:</h3>
+            <h4>Cheese Pairing Ideas</h4>
+            <ol>
+                <li>Prairie Breeze/St. Angel</li>
+                <li>Merlot Bellavitano/Roth Kase Original Havarti</li>
+                <li>Carr Valley Smoked Gouda/Manchego</li>
+            </ol>
+
+            <h4>Cheese Pairing Ideas</h4>
+            <ol>
+                <li>La Quercia Prosciutto/Finocchiona</li>
+                <li>Hot Coppa/Cubed Mortadella</li>
+                <li>Sopressata/Speck</li>
+            </ol>
+        </div>
+
+        <footer>
+            Disclaimers: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        function init() {
+            window.matchMedia("(min-width: 800px)").addListener(hitMQ);
+            window.matchMedia("(min-width: 600px)").addListener(hitMQ);
+        }
+
+        function hitMQ(evt) {
+            sampleCompleted("RWDPatterns-MostlyFluid");
+        }
+
+        init();
+
+    </script>
+</body>
+</html>
