@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles/layouts-common.css" rel="stylesheet" />
+        <link href="styles/offcanvas.css" rel="stylesheet" />
+        <link href="styles/nav.css" rel="stylesheet" />
+        <a href="../default.html">../default.html</a>
+        <title>Responsive Web Design Pattern: Craft Beer</title>
+    </head>
+  <body>    
+    <header>
+        <h1>Craft Beer</h1>
+    </header>
+    <nav>   
+        <ul>
+            <li><a href="quickpicks.html">Quick Picks</a></li>
+            <li><a href="charcuterie.html">Charcuterie</a></li>
+            <li><a href="specialtycheese.html">Specialty Cheese</a></li>
+            <li><a href="howtopair.html">How to Pair</a></li>
+            <li><a href="craftbeer.html">Craft Beer</a></li>
+        </ul>
+    </nav>
+    <div class="container" role="main">
+        <div id="leftDrawer" class="c1">
+            <ul>
+                <li>Pale Ales(Suggested Pairing - Grilled Meats): Pale Ales are beers with a malty flavor and a golden color. They are hoppy and can taste a bit like biscuit. Some can be more bitter while others more malty.</li>
+                <li>Dark Lagers(Suggested Pairing - Summer Sausage):</li>
+                <li>Brown Ales(Suggested Pairing - Aged Goua):</li>
+                <li>India Pale Ales(Suggested Pairing - Finocchiona):</li>
+                <li>Wheat Beers(Suggested Pairing - ):</li>
+                <li>Strong Ales(Suggested Pairing - ):</li>
+                <li>Belgian Styles(Suggested Pairing - ):</li>
+            </ul>
+        </div>
+        <div id="mainPanel" class="c2">
+            <img src="wsCraftBeerPage1.png" />
+            <img src="wsCraftBeerPage4.png" />
+            <h2>Styles and History</h2>
+            <p>Technically speaking there are over 75 different styles of beer! Craft beer began to take off in the United States during the 1960s. Home brewing became a bigger trend throughout the 1970s and 1980s. In the 1990s we began to see microbreweries. 
+        </div>
+        <div id="rightDrawer" class="c3">
+            <ul>
+                <li>Scottish-Style Ales(Suggested Pairing - ):</li>
+                <li>Sours(Suggested Pairing - ):</li>
+                <li>Pilseners(Suggested Pairing - ): </li>
+                <li>Hybrid Beers(Suggested Pairing - ):</li>
+                <li>Porters(Suggested Pairing - ):</li>
+                <li>Stouts(Suggested Pairing - ):</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        Disclaimers: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+    </footer>
+
+    <script type="text/javascript">
+        var position = 0;
+        var mainPanel = document.getElementById("mainPanel");
+        var leftDrawer = document.getElementById("leftDrawer");
+        var rightDrawer = document.getElementById("rightDrawer");
+
+        function toggle(evt) {
+            position++;
+            if (position % 3 == 0) {
+                leftDrawer.classList.remove("open");
+                rightDrawer.classList.remove("open");
+            } else if (position % 3 == 1) {
+                leftDrawer.classList.add("open");
+                rightDrawer.classList.remove("open");
+            } else {
+                leftDrawer.classList.remove("open");
+                rightDrawer.classList.add("open");
+            }
+        }
+
+        mainPanel.addEventListener("click", toggle);
+        leftDrawer.addEventListener("click", toggle);
+        rightDrawer.addEventListener("click", toggle);
+    </script>
+
+    <script type="text/javascript">
+        function init() {
+            window.matchMedia("(min-width: 800px)").addListener(hitMQ);
+            window.matchMedia("(min-width: 600px)").addListener(hitMQ);
+        }
+
+        function hitMQ(evt) {
+            sampleCompleted("RWDPatterns-MostlyFluid");
+        }
+
+        init();
+
+    </script>
+  </body>
+</html>

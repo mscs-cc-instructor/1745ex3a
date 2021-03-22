@@ -44,9 +44,12 @@
 }
 
 /* COMC1745 Exercise 3A styles */
-header { 
+header {
+    border-color: #00FF00;
+    border-style: solid;
     width: 100%;
     min-height: 40px;
+    border-left-width: medium;
 }
 
 footer {

@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/layouts-common.css" rel="stylesheet" />
+    <link href="styles/layoutshifter.css" rel="stylesheet" />
+    <link href="styles/nav.css" rel="stylesheet" />
+
+    <a href="../default.html">../default.html</a>
+    <title>Responsive Web Design Pattern: Specialty Cheese</title>
+</head>
+  <body>
+    <div class="container" role="main">
+        <header>
+            <h1>Specialty Cheese</h1>
+        </header>
+        <nav>   
+            <ul>
+                <li><a href="quickpicks.html">Quick Picks</a></li>
+                <li><a href="charcuterie.html">Charcuterie</a></li>
+                <li><a href="specialtycheese.html">Specialty Cheese</a></li>
+                <li><a href="howtopair.html">How to Pair</a></li>
+                <li><a href="craftbeer.html">Craft Beer</a></li>
+
+            </ul>
+        </nav>
+        <div class="c1">
+            <h3>Overview of Specialty Cheese</h3>
+            <ul>
+                <li>Fresh Soft</li>
+                <li>Fresh Firm</li>
+                <li>Soft</li>
+                <li>Semi Soft</li>
+                <li>Semi Hard</li>
+                <li>Hard</li>
+                <li>Semi Firm</li>
+                <li>Firm</li>
+                <li>Blue</li>
+            </ul>
+            <h3>Specialty Cheese Main Ingredients</h3>
+            <ul>
+                <li>Milk</li>
+                <li>Salt</li>
+                <li>Cultures</li>
+                <li>Enzymes</li>
+                <li>Rennet</li>
+            </ul>
+            <h3>Top 5 Specialty Cheese Producers in the United States</h3>
+            <ul>
+                <li>Wisconsin</li>
+                <li>California</li>
+                <li>Idaho</li>
+                <li>New Mexico</li>
+                <li>New York</li>
+            </ul>
+        </div>
+        <div class="c4">
+            <div class="c2">
+                <img src="wsDateNightCharBoard2.png" /><img src="wsSpecCheesePage4.png" />
+                                                       <img src="wsSpecCheesePage5.png" />
+            </div>
+            <div class="c3">
+                <h3>The Production Process</h3>
+                <ol>
+                    <li>The first step in the cheese making process begins at the farm. The milk quality of the cows is one of the most essential components to high quality cheese.</li>
+                    <li>The next step is separating the curd from the why. The amount of different cheeses you can make based off this simple step is astounding.</li>
+                </ol>
+            </div>
+        </div>
+
+        <footer>
+            Disclaimers: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        function init() {
+            window.matchMedia("(min-width: 800px)").addListener(hitMQ);
+            window.matchMedia("(min-width: 600px)").addListener(hitMQ);
+        }
+
+        function hitMQ(evt) {
+            sampleCompleted("RWDPatterns-MostlyFluid");
+        }
+
+        init();
+
+    </script>
+  </body>
+</html>

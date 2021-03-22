@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles/layouts-common.css" rel="stylesheet" />
+        <link href="styles/tinytweaks.css" rel="stylesheet" />
+        <link href="styles/nav.css" rel="stylesheet" />
+        <a href="../default.html">../default.html</a>
+        <title>Responsive Web Design Pattern: How to Pair</title>
+    </head>
+  <body>
+    <header>
+        <h1>How to Pair</h1>
+    </header>
+    <nav>   
+        <ul>
+            <li><a href="quickpicks.html">Quick Picks</a></li>
+            <li><a href="charcuterie.html">Charcuterie</a></li>
+            <li><a href="specialtycheese.html">Specialty Cheese</a></li>
+            <li><a href="howtopair.html">How to Pair</a></li>
+            <li><a href="craftbeer.html">Craft Beer</a></li>
+        </ul>
+    </nav>
+    <div class="container" role="main">
+        <div class="c1" style="clear: both">
+
+            <img src="wsStaffPickImg1.jpg" />
+            <img src="wsPairingsPage1.png" />
+            <img src="wsFavoritePage1.png" />
+            <h3>With so much to pick from how do you even start pairing items??</h3>
+
+            <p>The beginning step is the easiest, pick two products you like! This goes for cheese, beer, charcuterie and wine. Identify what you like first and what is one product that is essential to you and then we can go from there.</p>
+
+            <p>All right - here's where things can get a bit more tricky. If you decided you wanted some dry salami such as Sopressata or Finocchiona our suggestion is to pick a creamy cheese with that. Often times some spreadable goat cheese will go great with this! If you want to take it up a notch pick a sweeter one such as a blueberry or fig goat cheese.</p>
+
+            <p>Next we should decide something to contrast this....</p>
+
+
+        </div>
+
+        <footer>
+            Disclaimers: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        function init() {
+            window.matchMedia("(min-width: 800px)").addListener(hitMQ);
+            window.matchMedia("(min-width: 600px)").addListener(hitMQ);
+        }
+
+        function hitMQ(evt) {
+            sampleCompleted("RWDPatterns-MostlyFluid");
+        }
+
+        init();
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles/layouts-common.css" rel="stylesheet" />
+        <link href="styles/columndrop.css" rel="stylesheet" />
+        <link href="styles/nav.css" rel="stylesheet" />
+        <a href="../default.html">../default.html</a>
+        <title>Responsive Web Design Pattern: Charcuterie</title>
+    </head>
+  <body>
+    <div class="container" role="main">
+        <header>
+            <h1>Charcuterie</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="quickpicks.html">Quick Picks</a></li>
+                <li><a href="charcuterie.html">Charcuterie</a></li>
+                <li><a href="specialtycheese.html">Specialty Cheese</a></li>
+                <li><a href="howtopair.html">How to Pair</a></li>
+                <li><a href="craftbeer.html">Craft Beer</a></li>
+            </ul>
+            <img src="wsCharcuteriePage2.png" />
+            <img src="wsCharcuteriePage1.png" />
+            <img src="wsCharcuteriePage4.png" />
+            <h2>Traditional cured meats are making a comeback! Learn about some US producers, the process, and the different styles of these delicious meats.</h2>
+        </nav>
+        <div class="c1">
+            <h3>Process</h3>
+            <p>
+                Usually in America we traditionally go with the quickest method available to us. Charcuterie is the opposite of that. Master charcutiers take their time cauring
+                meats to achieve the desired flavor.
+            </p>
+            <p>
+                <ol>
+                    <li>
+                        Charcuterie beings with rubbing salt into the surface of the meat.
+                        The salt effectively sucks the water our of the meat in order to dry it out and preventing bacterial growth.
+                    </li>
+                    <li>etc</li>
+                    <li>etc</li>
+                </ol>
+            </p>
+        </div>
+        <div class="c2">
+            <h3>Producers</h3>
+            <p>Charcuterie is relatively new in the United States. Right now some of the biggest producers are:</p>
+            <ul>
+                <li>Columbus from San Francisco CA</li>
+                <li>Volpi from St. Louis MO</li>
+                <li>Fra'Mani from Berkely CA</li>
+            </ul>
+        </div>
+        <div class="c3">
+            <h3>Styles</h3>
+            <p> Charcuterie is more than just salami. There are all types of fun meats!</p>
+            <ol>
+                <li>Coppa(Pork Collar)</li>
+                <li>Lonza</li>
+                <li>Nduja(Ground smoky prosciutto Spread)</li>
+                <li>Bresaola</li>
+                <li>Prosciutto</li>
+            </ol>
+        </div>
+    </div>
+
+    <footer>
+        Disclaimers: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+    </footer>
+
+    <script type="text/javascript">
+        function init() {
+            window.matchMedia("(min-width: 800px)").addListener(hitMQ);
+            window.matchMedia("(min-width: 600px)").addListener(hitMQ);
+        }
+
+        function hitMQ(evt) {
+            sampleCompleted("RWDPatterns-MostlyFluid");
+        }
+
+        init();
+
+    </script>
+  </body>
+</html>
