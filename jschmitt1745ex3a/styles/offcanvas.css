@@ -1,4 +1,4 @@
-/*root css*/
+/* // [START ocanvas] */
 body {
     overflow-x: hidden;
 }
@@ -12,9 +12,9 @@ body {
     width: 250px;
     height: 100%;
     /*
-    This is a trick to improve performance on newer versions of Chrome
-    #perfmatters
-  */
+          This is a trick to improve performance on newer versions of Chrome
+          #perfmatters
+        */
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-transition: -webkit-transform 0.4s ease-out;
@@ -24,10 +24,10 @@ body {
 
 .c1 {
     /*
-  Using translate3d as a trick to improve performance on older versions of Chrome
-  See: http://aerotwist.com/blog/on-translate3d-and-layer-creation-hacks/
-  #perfmatters
-  */
+        Using translate3d as a trick to improve performance on older versions of Chrome
+        See: http://aerotwist.com/blog/on-translate3d-and-layer-creation-hacks/
+        #perfmatters
+        */
     -webkit-transform: translate(-250px,0);
     transform: translate(-250px,0);
 }
@@ -87,6 +87,8 @@ body {
         transform: translate(0,0);
     }
 }
+/* // [END ocanvas] */
+      
 
 /* COMC1745 Exercise 3A styles */
 header {

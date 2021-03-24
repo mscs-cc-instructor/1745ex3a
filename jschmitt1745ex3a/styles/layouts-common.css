@@ -39,10 +39,10 @@
     background-color: #dfe1e5;
 }
 
-@media (min-width: 800px) {
-    html {
-        width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.p-1 {
+    padding: 1em;
+}
+
+.p-2 {
+    padding: 2em;
 }

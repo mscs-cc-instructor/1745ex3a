@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="styles/layouts-common.css" rel="stylesheet" />
+    <link href="styles/NavBar.css" rel="stylesheet" />
+    <link href="styles/offcanvas.css" rel="stylesheet" />
+    <title>Responsive Web Design Pattern: Off Canvas</title>
+</head>
+<div class="container" role="main">
+    <header>
+        <h1>Ferment Your Garden</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="mostly-fluid.html">Mostly Fluid</a></li>
+            <li><a href="column-drop.html">Column Drop</a></li>
+            <li><a href="layout-shifter.html">Layout Shifter</a></li>
+            <li><a href="tiny-tweaks.html">Tiny Tweaks</a></li>
+            <li><a href="off-canvas.html">Off Canvas</a></li>
+        </ul>
+    </nav>
+</div>
+<body>
+    <div class="container" role="main">
+        <div class="c1" id="leftDrawer">
+            <h3 class="p-2">Additional Details</h3>
+        </div>
+        <div class="c2" id="mainPanel">
+            <div class="History">
+                <p> A happy accident of fermentation may have enticed the last hunter-gatherers of the Stone Age to abandon foraging for farming, thus sowing the seeds of civilization. The Natufians, a semi-sedentary culture, lived in the Levant during the Epipaleolithic Period 14,000 years ago. Charred flatbread remains dating 4,000 years before the birth of agriculture were recently found at their site in Jordans Back Desert. It was made from tubers, wild einkorn, and barley that were pounded to make a gruel-like food that could be cooked on hot stones. Doubtless, the perishable gruel fermented from airborne yeasts and bacteria in search of a meal of their own. </p>
+
+            </div>
+        </div>
+        <div class="c3" id="rightDrawer">
+            <h2 class="p-1">Did you know?</h2>
+            <p class="p-1">
+                It wasn't until the mid 1800s, though, that people understood what was happening to make their food ferment. In 1856, a French chemist by the name of Louis Pasteur connected yeast to the process of fermentation, making him the first zymologist - or someone who studies the applied science of fermentation. Pasteur originally defined fermentation as, "respiration without air" and he understood by his observations that fermentation never occurred in the absence of simultaneous cellular propagation and organization. At this time, fermentation was still being used solely to increase the holding and storing properties of food.
+            </p>
+        </div>
+    </div>
+
+
+</body>
+<script type="text/javascript">
+    var position = 0;
+    var mainPanel = document.getElementById("mainPanel");
+    var leftDrawer = document.getElementById("leftDrawer");
+    var rightDrawer = document.getElementById("rightDrawer");
+
+    function toggle(evt) {
+        position++;
+        if (position % 3 == 0) {
+            leftDrawer.classList.remove("open");
+            rightDrawer.classList.remove("open");
+        } else if (position % 3 == 1) {
+            leftDrawer.classList.add("open");
+            rightDrawer.classList.remove("open");
+        } else {
+            leftDrawer.classList.remove("open");
+            rightDrawer.classList.add("open");
+        }
+    }
+
+    mainPanel.addEventListener("click", toggle);
+    leftDrawer.addEventListener("click", toggle);
+    rightDrawer.addEventListener("click", toggle);
+
+</script>
+</html>
