@@ -1,0 +1,92 @@
+/*root css*/
+.container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.c1, .c2, .c3 {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .c1 {
+        width: 60%;
+        -webkit-order: 2;
+        order: 2;
+    }
+
+    .c2 {
+        width: 40%;
+        -webkit-order: 1;
+        order: 1;
+    }
+
+    .c3 {
+        width: 100%;
+        -webkit-order: 3;
+        order: 3;
+    }
+}
+
+
+@media (min-width: 800px) {
+    .c2 {
+        width: 20%;
+    }
+
+    .c3 {
+        width: 20%;
+    }
+}
+
+/* COMC1745 Exercise 3A styles */
+header {
+    width: 100%;
+    min-height: 40px;
+}
+
+footer {
+    width: 100%;
+    min-height: 40px;
+}
+
+
+@media (min-width: 800px) {
+    html {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.c2 {
+    color: #ddd;
+    background-color: white !important;
+}
+
+
+.prod_image {
+    width: 80%;
+    vertical-align: middle;
+}
+
+.p-1 {
+    padding: 1em;
+}
+
+.p-2 {
+    padding: 2em;
+}
+
+.smallfont {
+    font-size: small;
+}
+
+.cart {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}

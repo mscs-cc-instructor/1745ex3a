@@ -1,0 +1,53 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
+
+html {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* NAVIGATION STYLES */
+nav {
+    display: block;
+    width: 100%;
+}
+
+    nav ul {
+        margin: 0em;
+        padding: 0em;
+    }
+
+        nav ul li {
+            display: block;
+            float: left;
+            width: 17%;
+            padding: 0.5em;
+        }
+
+    nav ul {
+        font-size: 1.25em;
+        line-height: 2.25em;
+        /*font-weight: bold;*/
+        list-style-type: none;
+    }
+
+nav {
+    background-color: rgb(27,66,146);
+}
+
+    nav ul li {
+        background-color: rgb(27,66,146);
+    }
+
+        nav ul li:hover {
+            background-color: rgb(74,110,185);
+        }
+
+        nav ul li a {
+            color: rgb(224,224,224);
+            color: rgba(255,255,255,0.75);
+            text-decoration: none;
+        }
+
+            nav ul li a:hover {
+                color: rgb(255,255,255);
+            }
