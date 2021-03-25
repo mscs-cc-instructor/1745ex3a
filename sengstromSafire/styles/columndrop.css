@@ -1,0 +1,16 @@
+?.container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+h2 {
+    color: deeppink;
+}
+div.c1{
+    background-image: url('Images/handmade-soap.jpg');
+    height: 250px;
+    background: linear-gradient(to right, rgba(255,255,255,0) 20%, rgba(255,255,255,1)), url('../Images/handmade-soap.jpg');
+    background-position: center;
+}
