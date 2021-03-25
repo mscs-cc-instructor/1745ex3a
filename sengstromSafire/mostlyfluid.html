@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../sengstromSafire/styles/layouts-common.css" rel="stylesheet" />
+    <link href="../sengstromSafire/styles/mostlyfluid.css" rel="stylesheet" />
+    <link href="../sengstromSafire/styles/nav.css" rel="stylesheet" />
+    <title>Responsive Web Design Pattern: Mostly Fluid</title>
+</head>
+<body>
+    <div class="container" role="main">
+        <header>
+            <h1>Mostly Fluid</h1>
+        </header>
+        <nav>
+            <ul>
+
+                <li><a href="mostlyfluid.html">Mostly Fluid</a></li>
+                <li><a href="columndrop.html">Column Drop</a></li>
+                <li><a href="layoutshifter.html">Layout Shifter</a></li>
+                <li><a href="tinytweaks.html">Tiny Tweaks</a></li>
+                <li><a href="offcanvas.html">Off Canvas</a></li>
+            </ul>
+        </nav>
+		
+        <div class="c1">
+            <p>History of Soap Making </p>
+            <img style="display: inline;" src="images/coffee-soap-1.jpg" alt="Coffee Soap" width="250" />
+        </div>
+        <div class="c2">
+            <p>
+                The evidence of the world has of a soap-like substance dates back to around 2800 BC. The first known creators of this substance were the Babylonians,
+                Mesopotamians, Egyptians, Greeks and Romans. It wasn't originally made for bathing but for cleaning cooking utensils and medicinal purposes.
+            </p>
+
+            <p>
+                All soaps are made from fat, oils and salts. The Babylonians made their soap by boiling fat with ashes. Today, you still use some type of fat or oil
+                in the soap making process. One of the most common ways to make soap is by combining a fat (either animal or plant) with lye in a process called the
+                cold process method.
+            </p>
+
+            <p>
+                In the early beginnings of soap making, it was an exclusive technique used by small groups of soap makers.
+                The demand for soap was high, but it was very expensive and there was a monopoly on soap production in many areas.
+                Over time, recipes for soap making became more widely known, but soap was still expensive. Back then, plant byproducts
+                and animal and vegetable oils were the main ingredients of soap. The price of soap was significantly reduced in 1791
+                when a Frenchman by the name of LeBlanc discovered a chemical process that allowed soap to be sold for significantly less money.
+            </p>
+
+            <p>
+                More than 20 years later, another Frenchman identified relationships between glycerin, fats and acid what marked the
+                beginning of modern soap making. With the 1800 discovery of another method of making soap ingredients, soap became even less
+                expensive. Since that time, there have been no major discoveries and the same processes are used for the soap making we use
+                and enjoy today.
+            </p>
+
+
+        </div>
+        <div class="c3">
+            <img style="display: inline;" src="images/soap1jpg.jpg" alt="Coffee Soap" width="150" />
+        </div>
+        <div class="c4">
+            <img style="display: inline;" src="images/honeybee.jpg" alt="Coffee Soap" width="250" />
+        </div>
+        <div class="c5">
+            <img style="display: inline;" src="images/soap2.jpg" alt="Coffee Soap" width="150" />
+        </div>
+
+        <footer>
+            Disclaimers: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        function init() {
+            window.matchMedia("(min-width: 800px)").addListener(hitMQ);
+            window.matchMedia("(min-width: 600px)").addListener(hitMQ);
+        }
+
+        function hitMQ(evt) {
+            sampleCompleted("RWDPatterns-MostlyFluid");
+        }
+
+        init();
+
+    </script>
+</body>
+</html>
