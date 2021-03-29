@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="styles/layouts-common.css" rel="stylesheet" />
+    <link href="styles/offcanvas.css" rel="stylesheet" />
+    <link href="styles/nav.css" rel="stylesheet" />
+    <link href="styles/mnelsonStyles.css" rel="stylesheet" />
+
+    <title>Responsive Web Design Pattern: Off Canvas</title>
+</head>
+  <body>    
+      <div class="container" role="main">
+          <header>
+              <h1>
+                  <a href="../default.html">OFF CANVAS</a>
+              </h1>
+          </header>
+          <nav>
+              <ul>
+                  <li><a href="mostlyfluid.html"><span>Mostly Fluid</span></a></li>
+                  <li><a href="columndrop.html"><span>Column Drop</span></a></li>
+                  <li><a href="layoutshifter.html"><span>Layout Shifter</span></a></li>
+                  <li><a href="tinytweaks.html"><span>Tiny Tweaks</span></a></li>
+                  <li><a href="offcanvas.html"><span>Off Canvas</span></a></li>
+              </ul>
+          </nav>
+
+          <div class="c-all">
+              <div id="leftDrawer" class="c1">
+              </div>
+              <div id="mainPanel" class="c2">
+                  <p>Click the mainPanel &lt;<code>div</code>&gt; to change views.</p>
+                  <div class="live-stream">
+                      <!-- Add a placeholder for the Twitch embed -->
+                      <div id="twitch-embed" class="video-container"></div>
+
+                      <!-- Load the Twitch embed script -->
+                      <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+                      <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+                      <script type="text/javascript">
+                          new Twitch.Embed("twitch-embed", {
+                              width: 854,
+                              height: 480,
+                              channel: "northernlion"
+                          });
+                      </script>
+                  </div>
+              </div>
+              <div id="rightDrawer" class="c3">
+              </div>
+          </div>
+
+          <footer>
+              Disclaimers: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+          </footer>
+      </div>
+
+
+    <script type="text/javascript">
+        var rightDisable = true;
+        var leftDisable = true;
+
+        var rightDrawerOut = true;
+        var leftDrawerOut = true;
+
+        var position = 0;
+
+        var mainPanel = document.getElementById("mainPanel");
+        var leftDrawer = document.getElementById("leftDrawer");
+        var rightDrawer = document.getElementById("rightDrawer");
+
+        function togglePosition() {
+            if (rightDisable == false && leftDisable == false) {
+                if (position == 0) {
+                    // rightDrawer in
+                    rightDrawerInAnimation();
+                    position++;
+                }
+                else if (position == 1) {
+                    // rightDrawer out and leftDrawer in
+                    rightDrawerOutAnimation();
+                    leftDrawerInAnimation();
+                    position++;
+                }
+                else if (position == 2) {
+                    // leftDrawer out
+                    leftDrawerOutAnimation();
+                    position = 0;
+                }
+            }
+            else if (leftDisable == true && rightDisable == false) {
+                if (position == 0) {
+                    rightDrawerInAnimation();
+                    position++;
+                }
+                else if (position == 1) {
+                    rightDrawerOutAnimation();
+                    position = 0;
+                }
+            }
+        }
+
+        function setDrawers() {
+            // reset drawer positions
+            rightDrawerOutAnimation();
+            leftDrawerOutAnimation();
+            position = 0;
+
+            var width = mainPanel.offsetWidth;
+
+            if (width >= 800) {
+                leftDrawerInAnimation();
+                rightDrawerInAnimation();
+                rightDisable = true;
+                leftDisable = true;
+            }
+            if (width >= 600 && width < 800) {
+                leftDrawerInAnimation();
+                rightDrawerOutAnimation();
+                rightDisable = false;
+                leftDisable = true;
+            }
+            if (width >= 0 && width < 600) {
+                leftDrawerOutAnimation();
+                rightDisable = false;
+                leftDisable = false;
+            }
+        }
+
+        function rightDrawerInAnimation() {
+            rightDrawer.style.animation = "rightDrawerIn 300ms forwards";
+        }
+        function rightDrawerOutAnimation() {
+            rightDrawer.style.animation = "rightDrawerOut 300ms forwards";
+        }
+
+        function leftDrawerInAnimation() {
+            leftDrawer.style.animation = "leftDrawerIn 300ms forwards";
+        }
+        function leftDrawerOutAnimation() {
+            leftDrawer.style.animation = "leftDrawerOut 300ms forwards";
+        }
+
+        setDrawers();
+        window.addEventListener("resize", setDrawers);
+        mainPanel.addEventListener("click", togglePosition);
+    </script>
+
+    <script type="text/javascript">
+        function init() {
+            window.matchMedia("(min-width: 800px)").addListener(hitMQ);
+            window.matchMedia("(min-width: 600px)").addListener(hitMQ);
+        }
+
+        function hitMQ(evt) {
+            sampleCompleted("RWDPatterns-MostlyFluid");
+        }
+
+        init();
+
+    </script>
+  </body>
+</html>

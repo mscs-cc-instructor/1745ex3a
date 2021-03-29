@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="styles/nav.css" rel="stylesheet" />
+    <link href="styles/layouts-common.css" rel="stylesheet" />
+    <link href="styles/columndrop.css" rel="stylesheet" />
+    <link href="styles/mnelsonStyles.css" rel="stylesheet" />
+
+    <title>Responsive Web Design Pattern: Column Drop</title>
+</head>
+  <body>
+      <div class="container" role="main">
+          <header>
+              <h1>
+                  <a href="../default.html">COLUMN DROP</a>
+              </h1>
+          </header>
+          <nav>
+              <ul>
+                  <li><a href="mostlyfluid.html"><span>Mostly Fluid</span></a></li>
+                  <li><a href="columndrop.html"><span>Column Drop</span></a></li>
+                  <li><a href="layoutshifter.html"><span>Layout Shifter</span></a></li>
+                  <li><a href="tinytweaks.html"><span>Tiny Tweaks</span></a></li>
+                  <li><a href="offcanvas.html"><span>Off Canvas</span></a></li>
+              </ul>
+          </nav>
+
+          <div class="c-all">
+              <div class="c1">
+                  <!-- hat -->
+                  <div class="box">
+                      <div class="box-shadow">
+                          <div class="box-txt">
+                              <p>Black Hat</p>
+                          </div>
+                          <div class="img">
+                              <div class="black-overlay">
+                              </div>
+                              <img src="./resources/nl_hat.jpg" />
+                          </div>
+                      </div>
+                  </div>
+                  <!-- hat 02 -->
+                  <div class="box">
+                      <div class="box-shadow">
+                          <div class="box-txt">
+                              <p>Gray Hat</p>
+                          </div>
+                          <div class="img">
+                              <div class="black-overlay">
+                              </div>
+                              <img src="./resources/nl_hat2.png" />
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="c2">
+                  <!-- t-shirt -->
+                  <div class="box">
+                      <div class="box-shadow">
+                          <div class="box-txt">
+                              <p>T-Shirt</p>
+                          </div>
+                          <div class="img">
+                              <div class="black-overlay">
+                              </div>
+                              <img src="./resources/nl_t-shirt.jpeg" />
+                          </div>
+                      </div>
+                  </div>
+                  <!-- long sleeve shirt -->
+                  <div class="box">
+                      <div class="box-shadow">
+                          <div class="box-txt">
+                              <p>Long Sleeve</p>
+                          </div>
+                          <div class="img">
+                              <div class="black-overlay">
+                              </div>
+                              <img src="./resources/nl_long-shirt.jpg" />
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                  
+                <div class="c3">
+                    <!-- hoodie -->
+                    <div class="box">
+                        <div class="box-shadow">
+                            <div class="box-txt">
+                                <p>Hoodie</p>
+                            </div>
+                            <div class="img">
+                                <div class="black-overlay">
+                                </div>
+                                <img src="./resources/nl_hoodie.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- mask -->
+                    <div class="box">
+                        <div class="box-shadow">
+                            <div class="box-txt">
+                                <p>Mask</p>
+                            </div>
+                            <div class="img">
+                                <div class="black-overlay">
+                                </div>
+                                <img src="./resources/nl_mask.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+
+          <footer>
+              Disclaimers: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+          </footer>
+      </div>
+
+    <script type="text/javascript">
+        function init() {
+            window.matchMedia("(min-width: 800px)").addListener(hitMQ);
+            window.matchMedia("(min-width: 600px)").addListener(hitMQ);
+        }
+
+        function hitMQ(evt) {
+            sampleCompleted("RWDPatterns-MostlyFluid");
+        }
+
+        init();
+
+    </script>
+  </body>
+</html>
