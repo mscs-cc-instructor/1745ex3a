@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="styles/layouts-common.css" rel="stylesheet" />
+    <link href="styles/layoutshifter.css" rel="stylesheet" />
+    <link href="styles/nav.css" rel="stylesheet" />
+    <link href="styles/mnelsonStyles.css" rel="stylesheet" />
+
+    <title>Responsive Web Design Pattern: Layout Shifter</title>
+</head>
+  <body>
+    <div class="container" role="main">
+        <header>
+            <h1>LAYOUT SHIFTER</h1>
+        </header>
+        <nav>   
+            <ul>
+                <li><a href="mostlyfluid.html"><span>Mostly Fluid</span></a></li>
+                <li><a href="columndrop.html"><span>Column Drop</span></a></li>
+                <li><a href="layoutshifter.html"><span>Layout Shifter</span></a></li>
+                <li><a href="tinytweaks.html"><span>Tiny Tweaks</span></a></li>
+                <li><a href="offcanvas.html"><span>Off Canvas</span></a></li>
+            </ul>
+        </nav>
+
+        <div class="c-all">
+            <div class="c1">
+            </div>
+            <div class="c4">
+                <div class="c2">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/oZxeRKSTBVs" frameborder="0" allow="accelerometer;
+                        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/m2tdtsUll0U" frameborder="0" allow="accelerometer;
+                        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/NneNwCoNIt0" frameborder="0" allow="accelerometer;
+                        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="c3">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/csfRt1DLZ9g" frameborder="0" allow="accelerometer;
+                        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/zdz52PBX6yY" frameborder="0" allow="accelerometer;
+                        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            Disclaimers: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        function init() {
+            window.matchMedia("(min-width: 800px)").addListener(hitMQ);
+            window.matchMedia("(min-width: 600px)").addListener(hitMQ);
+        }
+
+        function hitMQ(evt) {
+            sampleCompleted("RWDPatterns-MostlyFluid");
+        }
+
+        init();
+
+    </script>
+  </body>
+</html>

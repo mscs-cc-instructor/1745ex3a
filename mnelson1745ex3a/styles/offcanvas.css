@@ -1,0 +1,74 @@
+body {
+    overflow-x: hidden;
+}
+.c-all {
+    position: relative;
+}
+.c-all div {
+    height: 100%;
+}
+.c2 p {
+    color: #4a4a4e;
+    text-align: center;
+    margin: 16px 0 16px 0;
+}
+
+.c2 {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+.c1 {
+    width: 20%;
+    position: absolute;
+    left: -20%;
+    top: 0;
+}
+.c3 {
+    width: 20%;
+    position: absolute;
+    right: -20%;
+    top: 0;
+}
+.live-stream {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+
+@keyframes leftDrawerIn {
+    from {
+        left: -20%;
+    }
+    to {
+        left: 0;
+    }
+}
+@keyframes leftDrawerOut {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: -20%;
+    }
+}
+@keyframes rightDrawerIn {
+    from {
+        right: -20%;
+    }
+
+    to {
+        right: 0;
+    }
+}
+@keyframes rightDrawerOut {
+    from {
+        right: 0;
+    }
+
+    to {
+        right: -20%;
+    }
+}
