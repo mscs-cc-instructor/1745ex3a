@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/layouts-common.css" rel="stylesheet" />
+    <link href="styles/mostlyfluid-contact.css" rel="stylesheet" />
+    <link href="styles/nav.css" rel="stylesheet" />
+    <title>Responsive Web Design Pattern: Mostly Fluid</title>
+</head>
+<body>
+    <header>
+        <h1>Contact us</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Services.html"> Our Services</a></li>
+            <li><a href="Prices.html">Our Prices</a></li>
+            <li><a href="TipsTricks.html">Tips & Tricks</a></li>
+            <li><a href="Contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <div class="container" role="main">
+        <div class="c1">
+            Address : 99999 Uptown Avenue, Someplaceville, MN 99999
+        </div>
+        <div class="c2">
+            Email : TouchUpLawns@example.com
+            Phone : +1(999)-999-9999
+        </div>
+    </div>
+    <footer>
+        We are always trying our best and always trying to satisfy our customer. If you don't like, we don't. We want you to be happy. This is your lawn.
+    </footer>
+    <script type="text/javascript">
+        function init() {
+            window.matchMedia("(min-width: 800px)").addListener(hitMQ);
+            window.matchMedia("(min-width: 600px)").addListener(hitMQ);
+        }
+
+        function hitMQ(evt) {
+            sampleCompleted("RWDPatterns-MostlyFluid");
+        }
+
+        init();
+
+    </script>
+</body>
+</html>
