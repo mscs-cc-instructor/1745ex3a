@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles/layouts-common.css" rel="stylesheet" />
+        <link href="styles/layoutshifter.css" rel="stylesheet" />
+        <link href="styles/nav.css" rel="stylesheet" />
+        <title>Responsive Web Design Pattern: Layout Shifter</title>
+    </head>
+    <body>
+        <header>
+            <h1>Layout Shifter</h1>
+            <a href="../default.html">default</a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="mostlyfluid.html">Mostly Fluid</a></li>
+                <li><a href="columndrop.html">Column Drop</a></li>
+                <li><a href="layoutshifter.html">Layout Shifter</a></li>
+                <li><a href="tinytweaks.html">Tiny Tweaks</a></li>
+                <li><a href="offcanvas.html">Off Canvas</a></li>
+            </ul>
+        </nav>
+        <div class="container" role="main">
+            <div class="c1">
+                <a href="offcanvas.html">PC Building</a><br /><br />
+                <a href="tinytweaks.html">OS Install</a>
+                <a href="mostlyfluid.html">Network Issues</a>
+            </div>
+            <div class="c4">
+                <h1 class="center">Tutorials</h1>
+                <img class="center" style="width: 70%;" src="images/tutorials.png" />
+                <p class="center">Check out one of the tutorial links to get started!</p>
+            </div>
+
+        </div>
+        <footer>
+            <p>&copy Copyright Jesse Poulin 2021</p>
+        </footer>
+        <script type="text/javascript">
+            function init() {
+                window.matchMedia("(min-width: 800px)").addListener(hitMQ);
+                window.matchMedia("(min-width: 600px)").addListener(hitMQ);
+            }
+
+            function hitMQ(evt) {
+                sampleCompleted("RWDPatterns-MostlyFluid");
+            }
+
+            init();
+
+        </script>
+    </body>
+</html>
