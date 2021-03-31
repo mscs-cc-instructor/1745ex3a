@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="styles/nav.css" rel="stylesheet" />
+    <link href="styles/layouts-common.css" rel="stylesheet" />
+    <link href="styles/mostlyfluid.css" rel="stylesheet" />
+    <link href="styles/mnelsonStyles.css" rel="stylesheet" />
+
+
+    <title>Responsive Web Design Pattern: Mostly Fluid</title>
+</head>
+  <body>
+      <div class="container" role="main">
+          <header>
+              <h1>
+                  <a href="../default.html">MOSTLY FLUID</a>
+              </h1>
+          </header>
+          <nav>
+              <ul>
+                  <li><a href="mostlyfluid.html"><span>Mostly Fluid</span></a></li>
+                  <li><a href="columndrop.html"><span>Column Drop</span></a></li>
+                  <li><a href="layoutshifter.html"><span>Layout Shifter</span></a></li>
+                  <li><a href="tinytweaks.html"><span>Tiny Tweaks</span></a></li>
+                  <li><a href="offcanvas.html"><span>Off Canvas</span></a></li>
+              </ul>
+          </nav>
+
+          <div class="c-all">
+              <div class="c1">
+                  <div class="iframe-container">
+                      <h3>RECENT UPLOAD</h3>
+                      <div class="video-container box-shadow">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/8MUcAG3zm1g" frameborder="0" allow="accelerometer;
+                        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                          </iframe>
+                      </div>
+                  </div>
+              </div>
+              <div class="c2">
+                  <div class="socials">
+                      <h3>SOCIALS</h3>
+                      <!-- youtube -->
+                      <a class="box-shadow linear-gradient" href="https://www.youtube.com/user/Northernlion" target="_blank">
+                          <div class="logo-container">
+                              <img src="./resources/youtube_logo.png" />
+                          </div>
+                          <div class="text-container">
+                              <span>Youtube</span>
+                          </div>
+                      </a>
+                      <!-- twitch -->
+                      <a class="box-shadow linear-gradient" href="https://www.twitch.tv/northernlion" target="_blank">
+                          <div class="logo-container">
+                              <img src="./resources/twitch_logo.png" />
+                          </div>
+                          <div class="text-container">
+                              <span>Twitch</span>
+                          </div>
+                      </a>
+                      <!-- twitter -->
+                      <a class="box-shadow linear-gradient" href="https://twitter.com/northernlionlp/" target="_blank">
+                          <div class="logo-container">
+                              <img src="./resources/twitter_logo.png" />
+                          </div>
+                          <div class="text-container">
+                              <span>Twitter</span>
+                          </div>
+                      </a>
+                      <!-- reddit -->
+                      <a class="box-shadow linear-gradient" href="https://www.reddit.com/r/northernlion/" target="_blank">
+                          <div class="logo-container">
+                              <img src="./resources/reddit_logo.png" />
+                          </div>
+                          <div class="text-container">
+                              <span>Reddit</span>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+              <div class="c3">
+                  <p>Contact</p>
+                  <ul>
+                      <li>Work Email</li>
+                      <li>Personal Email</li>
+                      <li>PO Box</li>
+                  </ul>
+              </div>
+              <div class="c4">
+                  <p>Support Me</p>
+                  <ul>
+                      <li>Patreon</li>
+                      <li>PayPal</li>
+                  </ul>
+              </div>
+              <div class="c5">
+                  <p>General</p>
+                  <ul>
+                      <li>Terms</li>
+                      <li>Privacy</li>
+                      <li>Help</li>
+                  </ul>
+              </div>
+          </div>
+
+          <footer>
+              Disclaimers: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+          </footer>
+      </div>
+
+    <script type="text/javascript">
+        function init() {
+            window.matchMedia("(min-width: 800px)").addListener(hitMQ);
+            window.matchMedia("(min-width: 600px)").addListener(hitMQ);
+        }
+
+        function hitMQ(evt) {
+            sampleCompleted("RWDPatterns-MostlyFluid");
+        }
+
+        init();
+
+    </script>
+  </body>
+</html>
