@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/columndrop.css" rel="stylesheet" />
+    <link href="styles/layouts-common.css" rel="stylesheet" />
+    <link href="styles/nav.css" rel="stylesheet" />
+    <title>Responsive Web Design Pattern: Column Drop</title>
+</head>
+<body>
+    <header>
+        <h1>Column Drop</h1>
+        <a href="../default.html">default</a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="mostlyfluid.html">Mostly Fluid</a></li>
+            <li><a href="columndrop.html">Column Drop</a></li>
+            <li><a href="layoutshifter.html">Layout Shifter</a></li>
+            <li><a href="tinytweaks.html">Tiny Tweaks</a></li>
+            <li><a href="offcanvas.html">Off Canvas</a></li>
+        </ul>
+    </nav>
+    <div class="container" role="main">
+        <div class="c3">
+            <img src="images/about_us.jpg">
+        </div>
+        <div class="c3">
+            <h1>About Us</h1>
+            <p>Techlinks is a community of tech enthusiasts and beginners alike who conspire together and share knowledge about IT and related topics in the forum. Techlinks provides tutorials as well, for the people wishing to delve into IT and related industries. We also link to tech news and reviews.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy Copyright Jesse Poulin 2021</p>
+    </footer>
+
+
+    <script type="text/javascript">
+        function init() {
+            window.matchMedia("(min-width: 800px)").addListener(hitMQ);
+            window.matchMedia("(min-width: 600px)").addListener(hitMQ);
+        }
+
+        function hitMQ(evt) {
+            sampleCompleted("RWDPatterns-MostlyFluid");
+        }
+
+        init();
+
+    </script>
+</body>
+</html>

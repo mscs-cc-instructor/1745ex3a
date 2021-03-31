@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/nav.css" rel="stylesheet" />
+    <link href="styles/layouts-common.css" rel="stylesheet" />
+    <link href="styles/mostlyfluid.css" rel="stylesheet" />
+    <title>Responsive Web Design Pattern: Mostly Fluid</title>
+</head>
+<body>
+    <header>
+        <h1>Mostly Fluid</h1>
+        <a href="../default.html">default</a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="mostlyfluid.html">Mostly Fluid</a></li>
+            <li><a href="columndrop.html">Column Drop</a></li>
+            <li><a href="layoutshifter.html">Layout Shifter</a></li>
+            <li><a href="tinytweaks.html">Tiny Tweaks</a></li>
+            <li><a href="offcanvas.html">Off Canvas</a></li>
+        </ul>
+    </nav>
+    <div class="container" role="main">
+        <div class="c1">
+            <h1>Fix Network Issues (Windows 10)</h1>
+        </div>
+        <div class="c2">
+            <p>
+                <strong>Perform a Network Reset</strong><br>
+                Sometimes, you just need to perform a cold reset of the network configuration on your PC/laptop. This is how you do it.
+                1. Go to the Settings app (not Control Panel)
+                <br>
+                2. Go to Network and Internet
+                <br>
+                3. Click the Network Reset option under Status
+                <br>
+                4. Click Reset Now after reading and understanding the message displayed.
+                
+            </p><br>
+        </div>
+        <div class="c2">
+            <p>
+                <strong>Manually installl/remove network driver(s)</strong>
+                If you want to install/manage the driver of the network card you can use Device Manager through Control Panel.
+                1. Go to the Control Panel
+                <br>
+                2. Find and click on Device manager
+                <br>
+                3. Under Network adapters, find the adapter responsible for your internet
+                <br>
+                4. Right click the adapter and select properties
+                <br>
+                5. Select Driver
+                <br>
+                6. Perform your needed operation
+            </p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy Copyright Jesse Poulin 2021</p>
+    </footer>
+    <script type="text/javascript">
+        function init() {
+            window.matchMedia("(min-width: 800px)").addListener(hitMQ);
+            window.matchMedia("(min-width: 600px)").addListener(hitMQ);
+        }
+
+        function hitMQ(evt) {
+            sampleCompleted("RWDPatterns-MostlyFluid");
+        }
+
+        init();
+
+    </script>
+</body>
+</html>
